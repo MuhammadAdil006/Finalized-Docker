@@ -31,7 +31,7 @@ peer   lifecycle   chaincode   checkcommitreadiness -n gocc -v 1.0 -C  automobil
 
 
 4. Commit the chaincode
-peer lifecycle chaincode commit -n gocc -v 1.0 -C automobilechannel --sequence 1 --init-required
+peer lifecycle chaincode commit -n gocc -v 1.0 -C automobilechannel --sequence 1 --init-required  --waitForEvent 
 
 5. Check committed
 peer lifecycle chaincode querycommitted -n gocc  -C automobilechannel
